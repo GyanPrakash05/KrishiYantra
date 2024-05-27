@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Registration Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(backgroundimg.png);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color:white;
+            opacity: 70%;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0,0.5);
+            width: 300px;
+        }
+        input[type="text"], input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4caf50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Login</h2>
+    <form id="loginForm">
+        <input type="text" id="loginEmail" placeholder="Email" required>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        <input type="submit" value="Login">
+    </form>
+    <p>Don't have an account? <a href="#" id="switchToRegister">Register here</a>.</p>
+</div>
+
+<script>
+    document.getElementById("switchToRegister").addEventListener("click", function(event) {
+        event.preventDefault();
+        document.getElementById("loginForm").style.display = "none";
+        document.getElementById("registerForm").style.display = "block";
+    });
+</script>
+
+<div class="container" style="display: none;" id="registerForm">
+    <h2>Register</h2>
+    <form id="registerForm">
+        <input type="text" id="registerFirstName" placeholder="First Name" required>
+        <input type="text" id="registerLastName" placeholder="Last Name" required>
+        <input type="text" id="registerEmail" placeholder="Email" required>
+        <input type="password" id="registerPassword" placeholder="Password" required>
+        <input type="submit" value="Register">
+    </form>
+    <p>Already have an account? <a href="#" id="switchToLogin">Login here</a>.</p>
+</div>
+
+<script>
+    document.getElementById("switchToLogin").addEventListener("click", function(event) {
+        event.preventDefault();
+        document.getElementById("loginForm").style.display = "block";
+        document.getElementById("registerForm").style.display = "none";
+    });
+</script>
+
+</body>
+</html>
