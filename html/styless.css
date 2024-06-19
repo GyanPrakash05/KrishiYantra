@@ -232,10 +232,10 @@
     margin-top: 0.2rem;
     background-color: green;
     text-align: center;
-    padding-bottom: 8px;
-    padding-top: 8px;
+    padding-bottom: 4px;
+    padding-top: 4px;
     border: 1px solid transparent;
-    border-radius: 15px;
+    border-radius: 20px;
    
 }
 .contact a{

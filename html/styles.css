@@ -5,13 +5,7 @@ body {
   padding: 0;
 }
 
-header {
-  background-color: #45a049;
-  color: #fff;
-  padding: 20px;
-  
-  text-align: center;
-}
+
 
 header h1 {
   margin: 0;
@@ -37,6 +31,10 @@ section {
   padding: 40px;
 }
 
+mission{
+    background-color:  #9bc591;
+  
+}
 section h2 {
   color: #333;
 }
@@ -55,3 +53,4 @@ footer {
 footer h3 {
   margin: 0;
 }
+
