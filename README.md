@@ -13,5 +13,5 @@ Sustainability Focus: By promoting the reuse of machinery and turning farm resid
 Profitability Enhancement: Farmers can optimize their operations, reduce waste, and generate additional revenue streams through the rental of machinery and sale of farm residue.
 Community Building: The platform fosters a community-driven approach to farming, connecting farmers, lenders, waste management communities, and NGOs for mutual benefit.
 
-![image](https://github.com/Akanshamishra9582/KrishiYantra/assets/154605442/1d777ea2-6858-4120-b166-21419d06a06e
+
 
